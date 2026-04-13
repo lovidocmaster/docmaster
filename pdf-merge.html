@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Merge PDF — DocMaster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Doc<span>Master</span></a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Tools</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="login.html">Log in</a>
+      <a href="signup.html" class="btn-nav">Sign up</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <div class="tool-page-header">
+      <p><a href="index.html">← All tools</a></p>
+      <h1>Merge PDF</h1>
+      <p>Select multiple PDFs. They will be combined in the order listed below (drag files in the picker in your preferred order, or merge in selection order).</p>
+    </div>
+    <div class="tool-workspace">
+      <div class="form-group">
+        <label for="files">PDF files</label>
+        <input type="file" id="files" accept="application/pdf,.pdf" multiple />
+        <p class="hint">All processing happens in your browser; files are not uploaded to any server.</p>
+      </div>
+      <div class="btn-row">
+        <button type="button" id="merge-btn" class="btn btn-primary" disabled>Merge &amp; download</button>
+      </div>
+      <div id="status" class="status-msg info" style="display: none"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© DocMaster. <a href="index.html">Home</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/pdf-merge.js"></script>
+</body>
+</html>

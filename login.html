@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Log in — DocMaster</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Doc<span>Master</span></a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Tools</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="login.html">Log in</a>
+      <a href="signup.html" class="btn-nav">Sign up</a>
+    </nav>
+  </header>
+
+  <main class="wrap auth-layout">
+    <div class="tool-page-header">
+      <h1>Log in</h1>
+      <p>Welcome back. This demo stores a session in your browser only.</p>
+    </div>
+    <div class="card-panel">
+      <form id="login-form" novalidate>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" autocomplete="current-password" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+      </form>
+      <p style="margin-top: 1rem; margin-bottom: 0; font-size: 0.9rem">
+        No account? <a href="signup.html">Sign up</a>
+      </p>
+      <div id="login-msg" class="status-msg" style="display: none; margin-top: 1rem"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>© DocMaster. <a href="index.html">Home</a></p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
