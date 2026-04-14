@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DocMaster — Document tools in your browser</title>
+  <title>iLoveDoc — Do More With Your Documents</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a href="index.html" class="logo" aria-label="DocMaster home">Doc<span>Master</span></a>
+    <a href="index.html" class="logo" aria-label="iLoveDoc home">iLove<span>Doc</span></a>
     <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
@@ -24,81 +24,69 @@
   </header>
 
   <main class="wrap">
-    <section class="hero">
-      <p class="hero-badge">All-in-one document workspace</p>
-      <h1>Powerful PDF &amp; AI tools, right in your browser</h1>
-      <p class="lead">Merge, split, compress, and watermark PDFs. Summarize documents, turn voice into meeting minutes, and scan pages with your camera — no install required.</p>
+    <section class="hero hero-modern">
+      <p class="hero-badge">Built for modern India</p>
+      <h1>Do More With Your Documents</h1>
+      <p class="lead">Scan, Convert, Summarise &amp; Sign — powered by AI. Built for how you work today</p>
+      <div class="trust-badges">
+        <div class="pill">100% Secure</div>
+        <div class="pill">No Install Needed</div>
+        <div class="pill">AI Powered</div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card"><span class="stat-value">50,000+</span><span>Documents</span></div>
+        <div class="stat-card"><span class="stat-value">4.8/5</span><span>Rating</span></div>
+        <div class="stat-card"><span class="stat-value">180+</span><span>Countries</span></div>
+      </div>
     </section>
 
     <section aria-labelledby="pdf-tools-heading">
       <h2 id="pdf-tools-heading" class="section-title">PDF tools</h2>
       <div class="tools-grid">
-        <article class="tool-card">
-          <div class="tool-card-icon" aria-hidden="true">📎</div>
-          <h3>Merge PDF</h3>
-          <p>Combine multiple PDF files into one document in the order you choose.</p>
-          <a href="pdf-merge.html" class="link-arrow">Open tool →</a>
-        </article>
-        <article class="tool-card">
-          <div class="tool-card-icon" aria-hidden="true">✂️</div>
-          <h3>Split PDF</h3>
-          <p>Extract a page range or split every page into separate files.</p>
-          <a href="pdf-split.html" class="link-arrow">Open tool →</a>
-        </article>
-        <article class="tool-card">
-          <div class="tool-card-icon" aria-hidden="true">🗜️</div>
-          <h3>Compress PDF</h3>
-          <p>Reduce file size by re-rendering pages as optimized images (works offline).</p>
-          <a href="pdf-compress.html" class="link-arrow">Open tool →</a>
-        </article>
-        <article class="tool-card">
-          <div class="tool-card-icon" aria-hidden="true">🔄</div>
-          <h3>Rotate PDF</h3>
-          <p>Rotate all pages or a custom range by 90°, 180°, or 270°.</p>
-          <a href="pdf-rotate.html" class="link-arrow">Open tool →</a>
-        </article>
-        <article class="tool-card">
-          <div class="tool-card-icon" aria-hidden="true">💧</div>
-          <h3>Watermark PDF</h3>
-          <p>Add a text watermark across every page with adjustable opacity.</p>
-          <a href="pdf-watermark.html" class="link-arrow">Open tool →</a>
-        </article>
+        <article class="tool-card"><div class="tool-card-icon">📎</div><h3>Merge PDF</h3><p>Combine multiple PDF files into one document in the order you choose.</p><a href="pdf-merge.html" class="link-arrow">Open tool →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">✂️</div><h3>Split PDF</h3><p>Extract a page range or split every page into separate files.</p><a href="pdf-split.html" class="link-arrow">Open tool →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">🗜️</div><h3>Compress PDF</h3><p>Reduce file size by re-rendering pages as optimized images.</p><a href="pdf-compress.html" class="link-arrow">Open tool →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">🔄</div><h3>Rotate PDF</h3><p>Rotate all pages or a custom range by 90°, 180°, or 270°.</p><a href="pdf-rotate.html" class="link-arrow">Open tool →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">💧</div><h3>Watermark PDF</h3><p>Add a text watermark across every page with adjustable opacity.</p><a href="pdf-watermark.html" class="link-arrow">Open tool →</a></article>
       </div>
     </section>
 
     <section style="margin-top: 2.5rem" aria-labelledby="ai-tools-heading">
-      <h2 id="ai-tools-heading" class="section-title">AI &amp; capture</h2>
+      <h2 id="ai-tools-heading" class="section-title">AI &amp; smart tools</h2>
       <div class="tools-grid">
-        <article class="tool-card">
-          <div class="tool-card-icon" aria-hidden="true">📝</div>
-          <h3>Document summarizer</h3>
-          <p>Upload .txt or .pdf and get an extractive summary instantly in the browser.</p>
-          <a href="ai-summarize.html" class="link-arrow">Open tool →</a>
-        </article>
-        <article class="tool-card">
-          <div class="tool-card-icon" aria-hidden="true">🎙️</div>
-          <h3>Voice → meeting minutes</h3>
-          <p>Record or dictate with speech recognition, then format structured minutes.</p>
-          <a href="ai-voice-minutes.html" class="link-arrow">Open tool →</a>
-        </article>
-        <article class="tool-card">
-          <div class="tool-card-icon" aria-hidden="true">📷</div>
-          <h3>Scan to PDF</h3>
-          <p>Use your device camera to capture pages and build a downloadable PDF.</p>
-          <a href="scan-pdf.html" class="link-arrow">Open tool →</a>
-        </article>
+        <article class="tool-card"><div class="tool-card-icon">📝</div><h3>Document summarizer</h3><p>Upload .txt or .pdf and get an extractive summary instantly in the browser.</p><a href="ai-summarize.html" class="link-arrow">Open tool →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">🎙️</div><h3>AI Meeting Minutes</h3><p>Record in any Indian language, get English minutes instantly.</p><a href="ai-voice-minutes.html" class="link-arrow">Open tool →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">📷</div><h3>Scan to PDF</h3><p>Use your device camera to capture pages and build a downloadable PDF.</p><a href="scan-pdf.html" class="link-arrow">Open tool →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">🧾</div><h3>GST Receipt Scanner</h3><p>Scan bills, auto-generate expense reports.</p><a href="scan-pdf.html" class="link-arrow">Try now →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">🪪</div><h3>Smart KYC Scanner</h3><p>Scan any ID card, extract data automatically.</p><a href="scan-pdf.html" class="link-arrow">Try now →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">📑</div><h3>Contract Checker</h3><p>Upload agreement, AI highlights risky clauses.</p><a href="ai-summarize.html" class="link-arrow">Try now →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">🩺</div><h3>Medical Records</h3><p>Scan prescriptions, build your health timeline.</p><a href="scan-pdf.html" class="link-arrow">Try now →</a></article>
+        <article class="tool-card"><div class="tool-card-icon">🎓</div><h3>Student Assistant</h3><p>Scan notes, get AI summaries instantly.</p><a href="ai-summarize.html" class="link-arrow">Try now →</a></article>
       </div>
     </section>
 
-    <p style="margin-top: 2rem; text-align: center">
-      <a href="pricing.html">View pricing</a>
-      ·
-      <a href="signup.html">Create a free account</a>
-    </p>
+    <section style="margin-top: 2.5rem" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading" class="section-title">Loved by users across India</h2>
+      <div class="testimonials-grid">
+        <article class="testimonial"><strong>Priya S., Mumbai</strong><p>CA Professional</p><p>★★★★★</p></article>
+        <article class="testimonial"><strong>Rahul K., Delhi</strong><p>Law Student</p><p>★★★★★</p></article>
+        <article class="testimonial"><strong>Anjali M., Bangalore</strong><p>HR Manager</p><p>★★★★★</p></article>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <p>© DocMaster. Built with HTML, CSS &amp; JavaScript. <a href="index.html">Home</a></p>
+    <p class="footer-brand">❤️ iLoveDoc</p>
+    <p>Made with ❤️ in India</p>
+    <p class="footer-links">
+      <a href="index.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="index.html">Blog</a>
+      <a href="index.html">Privacy</a>
+      <a href="index.html">Terms</a>
+      <a href="index.html">Contact</a>
+    </p>
+    <p>© 2026 iLoveDoc. All rights reserved.</p>
   </footer>
   <script src="js/main.js"></script>
 </body>
